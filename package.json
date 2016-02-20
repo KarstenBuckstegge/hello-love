@@ -12,9 +12,9 @@
     "email": "k.buckstegge@gmail.com"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
     "node-sass": "^3.4.2",
-    "parallelshell": "^2.0.0",
-    "rb-conventional-changelog": "^1.1.9"
+    "parallelshell": "^2.0.0"
   },
   "scripts": {
     "start": "npm run build && npm run watch",
