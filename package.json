@@ -1,0 +1,30 @@
+{
+  "name": "hello-love-web",
+  "version": "0.1.0",
+  "description": "Hello love",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Karsten Buckstegge",
+    "email": "k.buckstegge@gmail.com"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "rb-conventional-changelog": "^1.1.9"
+  },
+  "scripts": {
+    "start": "npm run build && npm run watch",
+    "prebuild": "npm run clean",
+    "build": "mkdir dist && npm run copy && npm run css",
+    "clean": "rm -rf dist",
+    "watch": "parallelshell 'npm run watch:markup' 'npm run watch:css'",
+    "watch:css": "watch 'npm run css' src/scss",
+    "css": "node-sass src/scss/index.scss -o dist/",
+    "watch:markup": "watch 'npm run copy' src",
+    "copy": "copyup src/*.html dist/"
+  }
+}
