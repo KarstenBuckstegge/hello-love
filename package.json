@@ -14,7 +14,8 @@
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
     "node-sass": "^3.4.2",
-    "parallelshell": "^2.0.0"
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.1"
   },
   "scripts": {
     "start": "npm run build && npm run watch",
@@ -23,7 +24,7 @@
     "clean": "rm -rf dist",
     "watch": "parallelshell 'npm run watch:markup' 'npm run watch:css'",
     "watch:css": "watch 'npm run css' src/scss",
-    "css": "node-sass src/scss/index.scss -o dist/",
+    "css": "node-sass src/scss/index.scss | postcss -u autoprefixer -o dist/style.css",
     "watch:markup": "watch 'npm run copy' src",
     "copy": "copyup src/*.html dist/"
   }
