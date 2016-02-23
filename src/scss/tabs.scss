@@ -1,0 +1,23 @@
+$tab-count: 2;
+
+.tabs {
+  .tab-input {
+    display: none;
+  }
+
+  .tab-label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  @for $i from 1 through $tab-count {
+    .tab-input-#{$i}:checked ~ .tab-content-#{$i} {
+      display: block;
+    }
+  }
+}

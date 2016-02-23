@@ -25,7 +25,7 @@
     "watch": "parallelshell 'npm run watch:markup' 'npm run watch:css'",
     "watch:css": "watch 'npm run css' src/scss",
     "css": "node-sass src/scss/index.scss | postcss -u autoprefixer -o dist/style.css",
-    "watch:markup": "watch 'npm run copy' src",
-    "copy": "copyup src/*.html dist/"
+    "watch:markup": "watch 'npm run copy' src/markup",
+    "copy": "copyfiles -u 2 src/markup/*.html dist/"
   }
 }
