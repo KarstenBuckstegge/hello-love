@@ -12,10 +12,13 @@
     "email": "k.buckstegge@gmail.com"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "copyfiles": "^0.2.1",
     "cz-conventional-changelog": "^1.1.5",
     "node-sass": "^3.4.2",
     "parallelshell": "^2.0.0",
-    "postcss-cli": "^2.5.1"
+    "postcss-cli": "^2.5.1",
+    "watch": "^0.17.1"
   },
   "scripts": {
     "start": "npm run build && npm run watch",
