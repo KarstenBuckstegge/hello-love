@@ -72,6 +72,9 @@ a {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
 
+.logo {
+  width: 80%; }
+
 @-webkit-keyframes fadeIn {
   to {
     opacity: 1;
