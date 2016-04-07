@@ -104,7 +104,8 @@ a {
       margin-bottom: 15px;
       font-size: 0.8em; }
   .flex-container .phone {
-    margin-top: .5em; }
+    margin-top: 1em;
+    font-size: 0.8em; }
 
 .footer {
   position: absolute;
