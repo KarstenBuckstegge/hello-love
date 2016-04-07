@@ -101,7 +101,10 @@ a {
   .flex-container span {
     width: 100%; }
     .flex-container span:last-of-type {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      font-size: 0.8em; }
+  .flex-container .phone {
+    margin-top: .5em; }
 
 .footer {
   position: absolute;
